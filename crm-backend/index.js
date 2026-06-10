@@ -4,7 +4,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const fetch = require('node-fetch');
-require('dotenv').config();
+require('dotenv').config({ path: path.join(__dirname, '.env') });
 
 const { evaluateSegment, parseSimpleRuleString } = require('./segmentEvaluator');
 const { draftMessage, compileSegment, chatAgent, getApiKeys } = require('./aiHelper');

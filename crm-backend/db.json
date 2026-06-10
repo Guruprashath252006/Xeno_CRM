@@ -59,6 +59,14 @@
       "message": "Hi {{name}}",
       "channel": "sms",
       "created_at": "2026-06-10T03:31:52.118Z"
+    },
+    {
+      "id": "camp_1781064784267_9776",
+      "name": "Summer Flash Sale",
+      "audience": "seg_1",
+      "message": "Hi Alice, offer 20% discount on summer apparel",
+      "channel": "sms",
+      "created_at": "2026-06-10T04:13:04.267Z"
     }
   ],
   "messages": [
