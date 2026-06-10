@@ -1,0 +1,18 @@
+{
+  "name": "xeno-mini-crm",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"node crm-backend/index.js\" \"node channel-stub/index.js\" \"npm --prefix frontend run dev\"",
+    "start": "node crm-backend/index.js",
+    "test": "node scripts/test.js"
+    ,"test-ai": "node scripts/test-ai-endpoints.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7",
+    "xeno-mini-crm": "file:"
+  }
+}

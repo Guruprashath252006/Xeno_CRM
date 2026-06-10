@@ -1,0 +1,235 @@
+{
+  "customers": [
+    {
+      "id": "c1",
+      "name": "Alice",
+      "email": "alice@example.com",
+      "phone": "+15550001",
+      "lifetime_value": 120
+    },
+    {
+      "id": "c2",
+      "name": "Bob",
+      "email": "bob@example.com",
+      "phone": "+15550002",
+      "lifetime_value": 45
+    }
+  ],
+  "orders": [
+    {
+      "id": "o1",
+      "customer_id": "c1",
+      "amount": 60,
+      "created_at": "2026-05-01"
+    },
+    {
+      "id": "o2",
+      "customer_id": "c1",
+      "amount": 60,
+      "created_at": "2026-06-01"
+    },
+    {
+      "id": "o3",
+      "customer_id": "c2",
+      "amount": 45,
+      "created_at": "2026-05-15"
+    }
+  ],
+  "campaigns": [
+    {
+      "id": "camp_1781014975720_6982",
+      "name": "smoke",
+      "audience": "lifetime_value>0",
+      "message": "Hi {{name}}",
+      "channel": "sms",
+      "created_at": "2026-06-09T14:22:55.720Z"
+    },
+    {
+      "id": "camp_1781016338885_3514",
+      "name": "smoke",
+      "audience": "lifetime_value>0",
+      "message": "Hi {{name}}",
+      "channel": "sms",
+      "created_at": "2026-06-09T14:45:38.886Z"
+    },
+    {
+      "id": "camp_1781062312117_9461",
+      "name": "smoke",
+      "audience": "lifetime_value>0",
+      "message": "Hi {{name}}",
+      "channel": "sms",
+      "created_at": "2026-06-10T03:31:52.118Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "m_1781014975738_2588",
+      "campaignId": "camp_1781014975720_6982",
+      "recipient": {
+        "id": "c1",
+        "name": "Alice",
+        "email": "alice@example.com",
+        "phone": "+15550001",
+        "lifetime_value": 120
+      },
+      "channel": "sms",
+      "status": "clicked",
+      "content": "Hi Alice",
+      "history": [
+        {
+          "event": {
+            "type": "delivered",
+            "detail": "delivered to carrier"
+          },
+          "at": "2026-06-09T14:22:57.769Z"
+        },
+        {
+          "event": {
+            "type": "opened"
+          },
+          "at": "2026-06-09T14:23:00.185Z"
+        },
+        {
+          "event": {
+            "type": "clicked"
+          },
+          "at": "2026-06-09T14:23:01.552Z"
+        }
+      ]
+    },
+    {
+      "id": "m_1781014975760_8442",
+      "campaignId": "camp_1781014975720_6982",
+      "recipient": {
+        "id": "c2",
+        "name": "Bob",
+        "email": "bob@example.com",
+        "phone": "+15550002",
+        "lifetime_value": 45
+      },
+      "channel": "sms",
+      "status": "opened",
+      "content": "Hi Bob",
+      "history": [
+        {
+          "event": {
+            "type": "delivered",
+            "detail": "delivered to carrier"
+          },
+          "at": "2026-06-09T14:22:57.370Z"
+        },
+        {
+          "event": {
+            "type": "opened"
+          },
+          "at": "2026-06-09T14:22:59.264Z"
+        }
+      ]
+    },
+    {
+      "id": "m_1781016338896_3050",
+      "campaignId": "camp_1781016338885_3514",
+      "recipient": {
+        "id": "c1",
+        "name": "Alice",
+        "email": "alice@example.com",
+        "phone": "+15550001",
+        "lifetime_value": 120
+      },
+      "channel": "sms",
+      "status": "opened",
+      "content": "Hi Alice",
+      "history": [
+        {
+          "event": {
+            "type": "delivered",
+            "detail": "delivered to carrier"
+          },
+          "at": "2026-06-09T14:45:40.183Z"
+        },
+        {
+          "event": {
+            "type": "opened"
+          },
+          "at": "2026-06-09T14:45:41.262Z"
+        }
+      ]
+    },
+    {
+      "id": "m_1781016338912_9405",
+      "campaignId": "camp_1781016338885_3514",
+      "recipient": {
+        "id": "c2",
+        "name": "Bob",
+        "email": "bob@example.com",
+        "phone": "+15550002",
+        "lifetime_value": 45
+      },
+      "channel": "sms",
+      "status": "opened",
+      "content": "Hi Bob",
+      "history": [
+        {
+          "event": {
+            "type": "delivered",
+            "detail": "delivered to carrier"
+          },
+          "at": "2026-06-09T14:45:40.027Z"
+        },
+        {
+          "event": {
+            "type": "opened"
+          },
+          "at": "2026-06-09T14:45:41.292Z"
+        }
+      ]
+    },
+    {
+      "id": "m_1781062312173_3083",
+      "campaignId": "camp_1781062312117_9461",
+      "recipient": {
+        "id": "c1",
+        "name": "Alice",
+        "email": "alice@example.com",
+        "phone": "+15550001",
+        "lifetime_value": 120
+      },
+      "channel": "sms",
+      "status": "delivered",
+      "content": "Hi Alice",
+      "history": [
+        {
+          "event": {
+            "type": "delivered",
+            "detail": "delivered to carrier"
+          },
+          "at": "2026-06-10T03:31:53.736Z"
+        }
+      ]
+    },
+    {
+      "id": "m_1781062312252_6800",
+      "campaignId": "camp_1781062312117_9461",
+      "recipient": {
+        "id": "c2",
+        "name": "Bob",
+        "email": "bob@example.com",
+        "phone": "+15550002",
+        "lifetime_value": 45
+      },
+      "channel": "sms",
+      "status": "delivered",
+      "content": "Hi Bob",
+      "history": [
+        {
+          "event": {
+            "type": "delivered",
+            "detail": "delivered to carrier"
+          },
+          "at": "2026-06-10T03:31:53.824Z"
+        }
+      ]
+    }
+  ],
+  "segments": []
+}

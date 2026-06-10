@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+crm-backend/node_modules/
+channel-stub/node_modules/
+
+# Production builds
+frontend/dist/
+dist/
+
+# Environments & keys
+.env
+.env.local
+.env.*.local
+crm-backend/.env
+frontend/.env
+
+# Logs
+*.log
+crm-backend/openai.log
+npm-debug.log*
+
+# Editor configs
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
