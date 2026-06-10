@@ -40,7 +40,7 @@ import {
 } from 'lucide-react';
 
 function AppContent() {
-  const API_BASE = import.meta.env.DEV ? 'http://localhost:3001' : '';
+  const API_BASE = import.meta.env.VITE_API_BASE || (import.meta.env.DEV ? 'http://localhost:3001' : '');
   
   const navigate = useNavigate();
   const location = useLocation();
