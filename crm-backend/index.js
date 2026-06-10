@@ -132,6 +132,9 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+const CALLBACK_URL = process.env.CALLBACK_URL || 'http://localhost:3001/api/receipts';
+const CHANNEL_STUB_URL = process.env.CHANNEL_STUB_URL || 'http://localhost:4001';
+
 // Simulated campaign message delivery queue
 const messageQueue = [];
 let queueTimer = null;
@@ -163,10 +166,10 @@ async function processQueue() {
       to: msg.recipient.phone || msg.recipient.email, 
       channel: msg.channel, 
       content: msg.content, 
-      callback_url: 'http://localhost:3001/api/receipts' 
+      callback_url: CALLBACK_URL 
     };
     
-    fetch('http://localhost:4001/send', { 
+    fetch(`${CHANNEL_STUB_URL}/send`, { 
       method: 'POST', 
       body: JSON.stringify(payload), 
       headers: { 'Content-Type': 'application/json' }
